@@ -1,0 +1,22 @@
+{
+  "name": "ws-log",
+  "version": "0.0.1",
+  "description": "Make logs more fun.",
+  "license": "MIT",
+  "author": "Will Swan",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/global.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "npx tsc && cp dist/index.js dist/index.mjs && cp src/global.d.ts dist/"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
